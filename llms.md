@@ -90,4 +90,3 @@ If a session already exists:
 - Always check `<screen-capture>` in output to see program state
 - Sessions persist until explicitly killed
 - Use `process-info` to check if a session is still alive
-- The output is "fake XML" - screen capture is raw terminal output, not escaped
