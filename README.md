@@ -4,13 +4,17 @@
 <a href=https://pypi.org/project/agent-cli-helper><img src=https://badge.fury.io/py/agent-cli-helper.svg/></a>
 </p>
 
+
+
+https://github.com/user-attachments/assets/802fac7d-5815-4bb7-92fa-875d9e32320e
+
+**agent-cli-helper** gives LLMs a way to use interactive terminal applications. 
+
 - **[llms.md](llms.md)** - Documentation for LLMs and agents
 - **[humans.md](humans.md)** - Documentation of human-only tools (IMPORTANT: agents must ignore this file)
 
-**agent-cli-helper** gives LLMs a way to use interactive terminal applications. Everything here is written for LLM ingestion and use. 
-
 ## For humans 
-Tell your harness (opencode, claude code, qwen, amp, gemini etc) to run `uvx agent-cli-helper` before asking it to do full-screen tui apps, interactive debugging, ssh'ing, emacs, vim, nano, and more.
+Tell your harness (opencode, claude code, qwen, amp, gemini etc) to run `uvx agent-cli-helper --help` before asking it to do full-screen tui apps, interactive debugging, ssh'ing, emacs, vim, nano, even claude code...
 
 ## For agents and LLMs
 Refer to **[llms.md](llms.md)** and **[agent-cli-helper-skill/SKILL.md](agent-cli-helper-skill/SKILL.md)**.
