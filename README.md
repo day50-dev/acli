@@ -3,25 +3,22 @@
 </p>
 
 - **[llms.md](llms.md)** - Documentation for LLMs and agents
-- **[humans.md](humans.md)** - Documentation for human users (IMPORTANT: agents should ignore this file)
+- **[humans.md](humans.md)** - Documentation of human-only tools (IMPORTANT: agents should ignore this file)
 
 ## Quick Start
 
 ```bash
 # Run a command in an interactive session
-./cb/cli-tool run-command "vim file.txt"
+cli-tool run-command "vim file.txt"
 
 # Send keystrokes to control the program
-./cb/cli-tool send-keystrokes vim-file "iHello\nEscape"
+cli-tool send-keystrokes vim-file-txt "iHello\nEscape"
 
 # View current screen
-./cb/cli-tool get-screen-capture vim-file
+cli-tool get-screen-capture vim-file-txt
 
 # List all sessions
-./cb/cli-tool list-sessions
-
-# Manage sessions (for humans)
-./cb/cli-manage
+cli-tool list-sessions
 ```
 
 ## What is cli-tool?
@@ -35,13 +32,3 @@ cli-tool wraps tmux to give LLMs an easier way to use terminal applications:
 - **kill-session** - Clean up when done
 
 See [llms.md](llms.md) for detailed documentation.
-
-## cli-manage
-
-For humans to manage sessions across all agent instances. Shows:
-- Tree view of all sessions
-- Liveness check on parent processes
-- Idle timers
-- Glob pattern support for bulk operations
-
-See [humans.md](humans.md) for details.
