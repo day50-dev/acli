@@ -730,19 +730,11 @@ def get_next_tip() -> str:
 
 
 def main():
-    """Main entry point for agent-cli-helper."""
+    """Main entry point for agent-cli-tool."""
     parser = argparse.ArgumentParser(
-        description='agent-cli-helper: A tool for LLMs and agents to interface interactive applications from the CLI.',
+        description='A tool for LLMs and agents to interface interactive applications from the CLI.',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__
-    )
-    
-    # Global flags
-    parser.add_argument(
-        '--global', '-g',
-        dest='global_list',
-        action='store_true',
-        help='View all sessions globally'
     )
     
     # Subcommands
@@ -851,7 +843,7 @@ def main():
     elif args.command == 'process-info':
         return process_info(args.session_id)
     elif args.command == 'kill-all-tools':
-        return kill_all_tools(global_kill=args.global_list)
+        return kill_all_tools(global_kill=False)
     elif args.command == 'list-sessions':
         return list_sessions()
     else:
