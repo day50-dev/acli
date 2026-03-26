@@ -5,7 +5,15 @@
 - **[llms.md](llms.md)** - Documentation for LLMs and agents
 - **[humans.md](humans.md)** - Documentation of human-only tools (IMPORTANT: agents should ignore this file)
 
-## Quick Start
+cli-tool gives LLMs a way to use interactive terminal applications:
+
+- **run-command** - Start a program in an interactive session
+- **send-keystrokes** - Control the program
+- **get-screen-capture** - See what's on screen
+- **process-info** - Check if session is alive
+- **kill-session** - Clean up when done
+
+## Examples
 
 ```bash
 # Run a command in an interactive session
@@ -20,15 +28,5 @@ cli-tool get-screen-capture vim-file-txt
 # List all sessions
 cli-tool list-sessions
 ```
-
-## What is cli-tool?
-
-cli-tool gives LLMs a way to use interactive terminal applications:
-
-- **run-command** - Start a program in an interactive session
-- **send-keystrokes** - Control the program
-- **get-screen-capture** - See what's on screen
-- **process-info** - Check if session is alive
-- **kill-session** - Clean up when done
 
 See [llms.md](llms.md) for detailed documentation.
