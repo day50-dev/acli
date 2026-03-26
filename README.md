@@ -1,5 +1,7 @@
 <p align="center">
-<img width="500" height="249" alt="logo_500" src="https://github.com/user-attachments/assets/ee093429-0a47-4a88-b66e-6a1931cab60e" />
+<img width="500" height="258" alt="logo_500" src="https://github.com/user-attachments/assets/f0d1ff36-0bda-450a-9048-f90957b7abd5" />
+<br/>
+<a href=https://pypi.org/project/agent-cli-helper><img src=https://badge.fury.io/py/agent-cli-helper.svg/></a>
 </p>
 
 - **[llms.md](llms.md)** - Documentation for LLMs and agents
