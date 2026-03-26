@@ -1,0 +1,2 @@
+# cli-tool dependencies
+# No external dependencies needed - uses standard library only
