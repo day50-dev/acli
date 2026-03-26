@@ -1,8 +1,6 @@
-# cli-tool
-
-A wrapper around tmux designed for LLMs and agents to interact with full-screen terminal applications.
-
-## Documentation
+<p align="center">
+<img width="500" height="249" alt="logo_500" src="https://github.com/user-attachments/assets/ee093429-0a47-4a88-b66e-6a1931cab60e" />
+</p>
 
 - **[llms.md](llms.md)** - Documentation for LLMs and agents
 - **[humans.md](humans.md)** - Documentation for human users (IMPORTANT: agents should ignore this file)
