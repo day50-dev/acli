@@ -3,10 +3,10 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cli-tool"
-version = "0.1.0"
+name = "agent-cli-helper"
+version = "0.2.0"
 authors = [
-  { name="cli-tool team" },
+  { name="DAY50" },
 ]
 description = "A tmux wrapper for LLMs to interact with full-screen CLI applications"
 readme = "README.md"
@@ -26,11 +26,12 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com/chris/cli-tool"
+"Homepage" = "https://github.com/day50-dev/acli"
 
 [project.scripts]
-cli-tool = "cli_tool.main:main"
-cli-tool-manage = "cli_tool.manage:main"
+agent-cli-helper = "cli_tool.main:main"
+acli-manage = "cli_tool.manage:main"
+
 
 [tool.setuptools]
 packages = ["cli_tool"]
