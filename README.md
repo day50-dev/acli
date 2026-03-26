@@ -15,7 +15,7 @@ agent-cli-helper gives LLMs a way to use interactive terminal applications:
 - **process-info** - Check if session is alive
 - **kill-session** - Clean up when done
 
-For humans: Using this is easy: Tell your harness (opencode, claude code, qwen, amp, gemini etc ... to run `uvx agent-cli-helper` before asking it to do complicated things)
+For humans: Using this is easy: Tell your harness (opencode, claude code, qwen, amp, gemini etc ... to run `uvx agent-cli-helper` before asking it to do full-screen tui apps, interactive debugging, ssh'ing, emacs, vim, nano, and more)
 
 ## Examples
 
