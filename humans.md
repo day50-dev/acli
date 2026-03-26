@@ -4,7 +4,11 @@
 
 # acli-manage - Human User Documentation
 
-acli-manage is a tool for humans to view and manage all agent-cli-helper sessions across different agent instances.
+acli is a tmux wrapper around the `-L` option which means it uses a separate socket. This means it has a very weak form of isolation which is limited to a particular instance of a harness.
+
+`acli-manage` is a view and manage all agent-cli-helper sessions across different agent instances by going into the tmux details.
+
+Essentially the agent does the `malloc` and *could do the free* but in practice, it's too dumb so we can do it.
 
 ## When to Use acli-manage
 
