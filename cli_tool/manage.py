@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-cli-manage: Manage cli-tool sessions
+acli-manage: Manage agent-cli-tool sessions
 
-A human-facing tool to view and manage all cli-tool sessions across
+A human-facing tool to view and manage all agent-cli-tool sessions across
 different namespaces (harnesses). Shows liveness of parent processes,
 session tree, and supports glob patterns for operations.
 
-Usage:
-    cli-manage                       # Show tree of all sessions
-    cli-manage kill "<pattern>"      # Kill sessions matching pattern
+Examples:
+    acli-manage                       # Show tree of all sessions
+    acli-manage kill "<pattern>"      # Kill sessions matching pattern
 """
 
 import argparse
@@ -263,7 +263,7 @@ def kill_matching_sessions(pattern: str, verbose: bool = False) -> int:
 def main():
     """Main entry point for acli-manage."""
     parser = argparse.ArgumentParser(
-        description='acli-manage: Manage agent-cli-helper sessions',
+        description='acli-manage: Manage agent-cli-tool sessions',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__
     )

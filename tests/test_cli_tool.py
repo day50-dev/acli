@@ -1,4 +1,4 @@
-"""Unit tests for agent-cli-helper."""
+"""Unit tests for agent-cli-tool."""
 
 import pytest
 import sys
