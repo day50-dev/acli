@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli-tool"
+version = "0.1.0"
+authors = [
+  { name="cli-tool team" },
+]
+description = "A tmux wrapper for LLMs to interact with full-screen CLI applications"
+readme = "README.md"
+license = { file = "LICENSE.MIT" }
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/chris/cli-tool"
+
+[project.scripts]
+cli-tool = "cli_tool.main:main"
+
+[tool.setuptools]
+packages = ["cli_tool"]
