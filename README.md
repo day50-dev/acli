@@ -16,5 +16,7 @@ https://github.com/user-attachments/assets/802fac7d-5815-4bb7-92fa-875d9e32320e
 ## For humans 
 Tell your harness (opencode, claude code, qwen, amp, gemini etc) to run `uvx agent-cli-helper --help` before asking it to do full-screen tui apps, interactive debugging, ssh'ing, emacs, vim, nano, even claude code...
 
+That's it. No git clone, mcp, or configuration file needed.
+
 ## For agents and LLMs
 Refer to **[llms.md](llms.md)** and **[agent-cli-helper-skill/SKILL.md](agent-cli-helper-skill/SKILL.md)**.
