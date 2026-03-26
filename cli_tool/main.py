@@ -730,9 +730,9 @@ def get_next_tip() -> str:
 
 
 def main():
-    """Main entry point for cli-tool."""
+    """Main entry point for agent-cli-helper."""
     parser = argparse.ArgumentParser(
-        description='cli-tool: A tool for LLMs and agents to interface interactive applications from the CLI.',
+        description='agent-cli-helper: A tool for LLMs and agents to interface interactive applications from the CLI.',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__
     )

@@ -1,12 +1,12 @@
-# cli-tool - LLMs and Agents Documentation
+# agent-cli-helper - LLMs and Agents Documentation
 
 > **IMPORTANT**: This file is for LLMs and agents only. See `humans.md` for human-facing documentation.
 
-cli-tool is a wrapper around tmux that gives LLMs an easier way to interact with full-screen terminal applications.
+agent-cli-helper is a wrapper around tmux that gives LLMs an easier way to interact with full-screen terminal applications.
 
-## When to Use cli-tool
+## When to Use agent-cli-helper
 
-Use cli-tool when you need to:
+Use agent-cli-helper when you need to:
 - Edit files with vim, nano, or emacs
 - SSH into remote servers
 - Use interactive debuggers (pdb, ipdb, gdb)
@@ -18,9 +18,9 @@ Use cli-tool when you need to:
 ### run-command
 Start a program in an interactive session:
 ```
-cli-tool run-command "vim /tmp/file.txt"
-cli-tool run-command "ssh user@host"
-cli-tool run-command "python -m ipdb script.py"
+agent-cli-helper run-command "vim /tmp/file.txt"
+agent-cli-helper run-command "ssh user@host"
+agent-cli-helper run-command "python -m ipdb script.py"
 ```
 
 Returns XML with session ID and screen capture.
@@ -28,8 +28,8 @@ Returns XML with session ID and screen capture.
 ### send-keystrokes
 Send keystrokes to a running session:
 ```
-cli-tool send-keystrokes vim-tmp-file "iHello World\nEscape"
-cli-tool send-keystrokes ssh-user-host "^C"
+agent-cli-helper send-keystrokes vim-tmp-file "iHello World\nEscape"
+agent-cli-helper send-keystrokes ssh-user-host "^C"
 ```
 
 Keystroke syntax:
@@ -42,31 +42,31 @@ Keystroke syntax:
 ### get-screen-capture
 Get current screen content without sending keystrokes:
 ```
-cli-tool get-screen-capture vim-tmp-file
+agent-cli-helper get-screen-capture vim-tmp-file
 ```
 
 ### process-info
 Get session details (PID, uptime):
 ```
-cli-tool process-info vim-tmp-file
+agent-cli-helper process-info vim-tmp-file
 ```
 
 ### kill-session
 Terminate a specific session:
 ```
-cli-tool kill-session vim-tmp-file
+agent-cli-helper kill-session vim-tmp-file
 ```
 
 ### list-sessions
 List all active sessions in your namespace:
 ```
-cli-tool list-sessions
+agent-cli-helper list-sessions
 ```
 
 ### force-run-command
 Create a new session even if one with the same name exists:
 ```
-cli-tool force-run-command "vim /tmp/file.txt"
+agent-cli-helper force-run-command "vim /tmp/file.txt"
 ```
 
 ## Session ID Generation

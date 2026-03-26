@@ -261,9 +261,9 @@ def kill_matching_sessions(pattern: str, verbose: bool = False) -> int:
 
 
 def main():
-    """Main entry point for cli-manage."""
+    """Main entry point for acli-manage."""
     parser = argparse.ArgumentParser(
-        description='cli-manage: Manage cli-tool sessions',
+        description='acli-manage: Manage agent-cli-helper sessions',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__
     )
