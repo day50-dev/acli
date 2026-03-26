@@ -1,0 +1,3 @@
+[console_scripts]
+acli-manage = cli_tool.manage:main
+agent-cli-helper = cli_tool.main:main
