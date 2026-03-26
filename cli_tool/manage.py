@@ -43,9 +43,6 @@ def list_tmux_sockets() -> List[str]:
         # Only include our prefixed sockets
         if not f.startswith(SOCKET_PREFIX + '-'):
             continue
-        # Skip if it contains ':' (that's a tmux server socket with server name)
-        if ':' in f:
-            continue
         # This is our socket
         sockets.append(f)
     

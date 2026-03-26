@@ -22,10 +22,10 @@ from typing import Optional, List, Tuple
 # Tip rotation state - tracks which tip was last shown (0-based index)
 _last_tip_index = -1
 
-# Configure logging - DEBUG level when LOGGING=debug
+# Configure logging - DEBUG level when LOGLEVEL=debug
 import logging
 logging.basicConfig(
-    level=logging.DEBUG if os.environ.get('LOGGING') == 'debug' else logging.WARNING,
+    level=logging.DEBUG if os.environ.get('LOGLEVEL') == 'debug' else logging.WARNING,
     format='[%(levelname)s] %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -63,7 +63,7 @@ def get_socket_name() -> str:
         
         try:
             with open(f'/proc/{ppid}/comm', 'r') as f:
-                proc_name = f.read().strip()
+                proc_name = re.sub(r'[^a-z0-9]', '', f.read().lower().strip().split(' ')[0])
         except (FileNotFoundError, PermissionError):
             break
         
