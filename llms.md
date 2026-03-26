@@ -1,6 +1,6 @@
 # agent-cli-helper - LLMs and Agents Documentation
 
-agent-cli-helper is a wrapper around tmux that gives LLMs an easier way to interact with full-screen terminal applications.
+agent-cli-helper is a command line tool for LLMs and agents to interface full-screen terminal applications.
 
 ## When to Use agent-cli-helper
 
@@ -109,4 +109,3 @@ If a session already exists:
 - Always check `<screen-capture>` in output to see program state
 - Sessions persist until explicitly killed
 - Use `process-info` to check if a session is still alive
-- The output is "fake XML" - screen capture is raw terminal output, not escaped
