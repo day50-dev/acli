@@ -23,7 +23,7 @@ cli-tool list-sessions
 
 ## What is cli-tool?
 
-cli-tool wraps tmux to give LLMs an easier way to use terminal applications:
+cli-tool gives LLMs a way to use interactive terminal applications:
 
 - **run-command** - Start a program in an interactive session
 - **send-keystrokes** - Control the program
