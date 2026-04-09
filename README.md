@@ -7,7 +7,7 @@
 
 https://github.com/user-attachments/assets/802fac7d-5815-4bb7-92fa-875d9e32320e
 
-**agent-cli-helper** makes LLMs use interactive terminal applications successfully. 
+**agent-cli-helper**, part of the [DAY50](https://day50.dev) suite of open-source tools for AI workflows, makes LLMs use interactive terminal applications successfully. 
 
 Even with small models. 
 
